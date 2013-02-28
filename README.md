@@ -1,5 +1,14 @@
 # Twitter.com user style
 
+Updated Connor's original work
+
+* Enlarge search bar
+* Center dropdown menu to search input
+* Remove content type text, leaving icon
+* Hide promoted tweets
+* Removed discover tab
+
+
 I love Twitter. I especially love how simple it is on mobile and this user style brings that experience to the desktop web client.
 
 <img src="https://raw.github.com/connors/twitter-user-style/master/screenshot.png" alt="screenshot" />
