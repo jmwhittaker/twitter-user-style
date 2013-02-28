@@ -9,8 +9,8 @@
 .mini-profile,
 .chev-right,
 .module[data-component-term^="profile_tweetbox"],
-.bird-topbar-etched { 
-  display: none !important; 
+.bird-topbar-etched {
+  display: none !important;
 }
 
 /* Base structure
@@ -41,25 +41,46 @@
 .global-nav .form-search {
   width: 170px;
 }
-.global-nav .search-input { width: 110px; }
-.global-nav .search-input.focus { width: 130px; }
+.global-nav .search-input {
+  width: 235px;
+}
+.global-nav .search-input.focus {
+  width: 235px;
+}
+.container .nav {
+  margin-left: 15px;
+}
 
 /* Move the load spinner to the top right on the screen */
 .push-loader {right: 20px; left: auto;}
 
+/* Center align typeahead dropdown to form input */
+.typeahead {
+  right: 0;
+  left: -128px;
+}
+
+.dropdown-menu .dropdown-caret{
+  left: 50%;
+  margin-left: -6px;
+}
+
+.dropdown-menu li>a {
+  font-size: 14px;
+}
 
 /* Side navigation
 ================================================== */
 
 /* Move the dashboard parent div to the left margin. */
-.dashboard { 
-  position: absolute; 
-  left: -210px; 
-  width: 200px;
+.dashboard {
+  position: absolute;
+  left: -110px;
+  width: 100px;
  }
 
 /* Nav module */
-.module { 
+.module {
   border: none;
 }
 .module .list-link {
@@ -70,7 +91,7 @@
 
 /* Nav styles based on the user specified overlay color  */
 /* White */
-.module { 
+.module {
   -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,.2);
      -moz-box-shadow:  0 -1px 0 rgba(0,0,0,.2);
           box-shadow:  0 1px 0 rgba(0,0,0,.2);
@@ -95,7 +116,7 @@
   background-color: rgba(255,255,255,.9);;
 }
 /* Black */
-.wrapper.black .module { 
+.wrapper.black .module {
   -webkit-box-shadow:  0 1px 0 rgba(255,255,255,.1);
      -moz-box-shadow:  0 1px 0 rgba(255,255,255,.1);
           box-shadow:  0 1px 0 rgba(255,255,255,.1), inset 0 0 5px rgba(0,0,0,.3);
@@ -103,6 +124,7 @@
 .wrapper.black .module .list-link {
   background-color: rgba(0,0,0,.3);
   color: #ccc;
+  opacity: 0.5;
   text-shadow: 0 1px 0 rgba(0,0,0,.5);
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -114,6 +136,7 @@
 .wrapper.black .module .list-link:hover,
 .wrapper.black .module .active .list-link {
   color: #eee;
+  opacity: 0.8;
 }
 .wrapper.black .module .list-link:hover,
 .wrapper.black .module .active .list-link {
@@ -124,7 +147,22 @@
 ================================================== */
 
 /* Change the profile bio text to Georgia. For old times sake. */
-.profile-card.profile-header .bio { 
-  font-family: Georgia, serif; 
-  font-style: italic; 
+.profile-card.profile-header .bio {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+/* Hide Promoted Tweets */
+.promoted-tweets {
+  display: none;
+}
+
+/* Remove Discover tab */
+.topics {
+  display: none;
+}
+
+/* Only show the icon for stream-item */
+.expand-stream-item {
+  display: none;
 }
